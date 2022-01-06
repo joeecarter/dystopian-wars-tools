@@ -1,9 +1,15 @@
 {
-  "name": "dystopian-wars-tools",
-  "version": "1.0.0",
-  "description": "Tooling for the tabletop game - dystopian wars",
-  "main": "index.js",
-  "repository": "git@github.com:joeecarter/dystopian-wars-tools.git",
-  "author": "Joe Carter <joe_e_carter@hotmail.co.uk>",
-  "license": "MIT"
+	"private": true,
+	"name": "dystopian-wars-tools",
+	"description": "Tooling for the tabletop game - dystopian wars",
+	"workspaces": [
+		"packages/cli"
+	],
+	"bin": {
+		"dystopian-roll": "packages/cli/roll-dice.js"
+	},
+	"scripts": {},
+	"dependencies": {
+		"lerna": "^4.0.0"
+	}
 }

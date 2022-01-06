@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+const path = require('path')
 
 const ATTACK = 'attack'
 const DEFEND = 'defend'
@@ -29,10 +30,10 @@ const DEFEND_RESULT = {
 }
 
 async function main() {
-	const [ ,, type, numberOfDice ] = process.argv
+	const [ , script, type, numberOfDice ] = process.argv
 
 	if (process.argv.length !== 4) {
-		console.error(`USAGE: roll-dice.js ${ATTACK}|${DEFEND} <number of dice>`)
+		console.error(`USAGE: ${path.basename(script)} ${ATTACK}|${DEFEND} <number of dice>`)
 		process.exit(127)
 	}
 

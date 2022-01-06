@@ -1,0 +1,7 @@
+{
+	"name": "@dystopian-wars-tools/cli",
+	"version": "1.0.0",
+	"license": "MIT",
+	"description": "Command line version of the dice rolling algorithm.",
+	"main": "roll-dice.js"
+}
