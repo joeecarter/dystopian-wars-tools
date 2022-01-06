@@ -3,12 +3,17 @@
 	"name": "dystopian-wars-tools",
 	"description": "Tooling for the tabletop game - dystopian wars",
 	"workspaces": [
-		"packages/cli"
+		"packages/cli",
+		"packages/dice-roller"
 	],
 	"bin": {
 		"dystopian-roll": "packages/cli/roll-dice.js"
 	},
-	"scripts": {},
+	"scripts": {
+		"clean": "lerna run clean",
+		"build": "lerna --ignore @dystopian-wars-tools/dice-roller run build --stream",
+		"start": "yarn --cwd packages/dice-roller start"
+	},
 	"dependencies": {
 		"lerna": "^4.0.0"
 	}
