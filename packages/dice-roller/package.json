@@ -1,6 +1,7 @@
 {
 	"name": "@dystopian-wars-tools/dice-roller",
 	"version": "1.0.0",
+	"license": "MIT",
 	"dependencies": {
 		"@testing-library/jest-dom": "^5.16.1",
 		"@testing-library/react": "^12.1.2",
@@ -39,6 +40,7 @@
 		]
 	},
 	"devDependencies": {
+		"node-sass": "^7.0.1",
 		"rimraf": "^3.0.2"
 	}
 }

@@ -1,5 +1,6 @@
 {
 	"private": true,
+	"license": "MIT",
 	"name": "dystopian-wars-tools",
 	"description": "Tooling for the tabletop game - dystopian wars",
 	"workspaces": [
