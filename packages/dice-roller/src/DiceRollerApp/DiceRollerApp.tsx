@@ -1,24 +1,15 @@
-import React from 'react'
-import logo from './logo.svg'
-import './DiceRollerApp.css'
+import './DiceRollerApp.scss'
+import Dice from '../Dice/Dice'
 
 export default function DiceRollerApp() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+	<div className="DiceRollerApp">
+		<Dice value={1} />
+		<Dice value={2} />
+		<Dice value={3} />
+		<Dice value={4} />
+		<Dice value={5} />
+		<Dice value={6} />
+	</div>
+	)
 }
